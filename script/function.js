@@ -6,10 +6,15 @@ function getInputValue(base, height, who) {
     const areaBaseValue = parseFloat(areaBase.value);
     const areaHeightValue = parseFloat(areaHeight.value);
 
+    const areaBaseValueString = areaBase.value + '';
+    const areaHeightValueString = areaHeight.value + '';
+
     areaBase.value = '';
     areaHeight.value = '';
 
-    if (who === "triangle" || who === "rhombus" || who === "pentagon") {
+    if (areaBaseValue <= 0 || areaHeightValue <= 0 || areaBaseValueString === '' || areaHeightValueString === '') {
+        alert("enter any valid digit");
+    } else if (who === "triangle" || who === "rhombus" || who === "pentagon") {
         const area = 0.5 * areaBaseValue * areaHeightValue;
         return area;
     } else if (who === "rectangle" || who === "parallelogram") {
@@ -24,10 +29,10 @@ function getInputValue(base, height, who) {
 // add item order list with click button
 function createNewElement(areaTitle, areaValue) {
     const areaTitleName = document.getElementById(areaTitle).innerText;
-    console.log(areaTitleName);
-
     const listContainer = document.getElementById("list-container");
-    listContainer.innerHTML = listContainer.innerHTML + `
+
+    if (areaValue != undefined) {
+        listContainer.innerHTML = listContainer.innerHTML + `
     <li>
         <div class="item">
             <p>`+ areaTitleName + `</p>
@@ -36,4 +41,5 @@ function createNewElement(areaTitle, areaValue) {
         </div>
     </li>
      `
+    }
 }
