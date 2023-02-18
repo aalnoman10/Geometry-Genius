@@ -21,7 +21,7 @@ function getInputValue(base, height, who) {
         const area = areaBaseValue * areaHeightValue;
         return area;
     } else if (who === "ellipse") {
-        const area = 3.1416 * areaBaseValue * areaHeightValue;
+        const area = 3.14 * areaBaseValue * areaHeightValue;
         return area;
     }
 }
@@ -42,4 +42,14 @@ function createNewElement(areaTitle, areaValue) {
     </li>
      `
     }
+}
+
+// generate Random Color 
+function randomColor(cardId) {
+    const R = Math.round(Math.random() * 255);
+    const G = Math.round(Math.random() * 255);
+    const B = Math.round(Math.random() * 255);
+
+    const RGB = "rgb(" + R + "," + G + "," + B + ")";
+    document.getElementById(cardId).style.backgroundColor = RGB;
 }
