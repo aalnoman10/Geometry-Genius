@@ -2,8 +2,16 @@
     height: 150px;
 }
 
+.ggr-ol li .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 @media screen and (max-width: 576px) {
     .ggr-img {
         height: unset;
     }
 }
+
+/* d-flex justify-content-between align-items-center */

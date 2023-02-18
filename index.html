@@ -27,15 +27,15 @@
             </nav>
         </header>
         <!-- main  -->
-        <main class="row g-4 py-4">
+        <main class="row g-2 py-4">
             <section class="col-12 col-sm-9">
-                <div class="row row-cols-1 row-cols-sm-3 g-4 text-center">
+                <div class="row row-cols-1 row-cols-sm-3 g-2 text-center">
                     <!-- card 1 -->
                     <div class="col">
                         <div class="card h-100 p-5">
                             <img src="./images/triangle.png" class="card-img-top ggr-img" alt="...">
                             <div class="card-body pt-5">
-                                <h5 class="card-title">Triangle</h5>
+                                <h5 id="triangle-title" class="card-title">Triangle</h5>
                                 <p class="card-text">Area (A) = 0.5 &times; b &times; h</p>
                                 <div class="card-text d-flex">
                                     <label class="d-flex">
@@ -58,7 +58,7 @@
                         <div class="card h-100 p-5">
                             <img src="./images/rectangle.png" class="card-img-top ggr-height ggr-img" alt="...">
                             <div class="card-body pt-5">
-                                <h5 class="card-title">Rectangle</h5>
+                                <h5 id="rectangle-title" class="card-title">Rectangle</h5>
                                 <p class="card-text">Area (A) = w &times; l</p>
                                 <div class="card-text d-flex">
                                     <label class="d-flex">
@@ -81,7 +81,7 @@
                         <div class="card h-100 p-5">
                             <img src="./images/parallelogram.png" class="card-img-top ggr-height ggr-img" alt="...">
                             <div class="card-body pt-5">
-                                <h5 class="card-title">Parallelogram</h5>
+                                <h5 id="parallelogram-title" class="card-title">Parallelogram</h5>
                                 <p class="card-text">Area (A) = b &times; h</p>
                                 <div class="card-text d-flex">
                                     <label class="d-flex">
@@ -104,7 +104,7 @@
                         <div class="card h-100 p-5">
                             <img src="./images/rhombus.png" class="card-img-top ggr-height ggr-img" alt="...">
                             <div class="card-body pt-5">
-                                <h5 class="card-title">Rhombus</h5>
+                                <h5 id="rhombus-title" class="card-title">Rhombus</h5>
                                 <p class="card-text">Area (A) = 0.5 &times; d<sub>1</sub> &times; d<sub>2</sub></p>
                                 <div class="card-text d-flex">
                                     <label class="d-flex">
@@ -127,7 +127,7 @@
                         <div class="card h-100 p-5">
                             <img src="./images/pentagon.png" class="card-img-top ggr-height ggr-img" alt="...">
                             <div class="card-body pt-5">
-                                <h5 class="card-title">Pentagon</h5>
+                                <h5 id="pentagon-title" class="card-title">Pentagon</h5>
                                 <p class="card-text">Area (A) = 0.5 &times; b &times; p</p>
                                 <div class="card-text d-flex">
                                     <label class="d-flex">
@@ -150,7 +150,7 @@
                         <div class="card h-100 p-5">
                             <img src="./images/ellipse.png" class="card-img-top ggr-height ggr-img" alt="...">
                             <div class="card-body pt-5">
-                                <h5 class="card-title">Ellipse</h5>
+                                <h5 id="ellipse-title" class="card-title">Ellipse</h5>
                                 <p class="card-text">Area (A) = &pi;ab</p>
                                 <div class="card-text d-flex">
                                     <label class="d-flex">
@@ -172,14 +172,9 @@
             </section>
             <section class="col-12 col-sm-3">
                 <div class="col">
-                    <div class="card h-100 py-5 px-3">
+                    <div class="card h-100 py-5 px-2">
                         <h5 class="card-title text-center text-decoration-underline">Area Calculation</h5>
-                        <ol class="pt-3">
-                            <li>22</li>
-                            <li>03</li>
-                            <li>7</li>
-                            <li>80</li>
-                            <li>23</li>
+                        <ol id="list-container" class="pt-3 ggr-ol">
                         </ol>
                     </div>
                 </div>
@@ -192,6 +187,7 @@
         crossorigin="anonymous"></script>
     <!-- js -->
     <script src="script/function.js"></script>
+    <script src="script/btn-click.js"></script>
 </body>
 
 </html>

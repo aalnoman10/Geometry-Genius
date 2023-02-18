@@ -1,9 +1,13 @@
+// get value and return area each card
 function getInputValue(base, height, who) {
     const areaBase = document.getElementById(base);
     const areaHeight = document.getElementById(height);
 
     const areaBaseValue = parseFloat(areaBase.value);
     const areaHeightValue = parseFloat(areaHeight.value);
+
+    areaBase.value = '';
+    areaHeight.value = '';
 
     if (who === "triangle" || who === "rhombus" || who === "pentagon") {
         const area = 0.5 * areaBaseValue * areaHeightValue;
@@ -17,38 +21,19 @@ function getInputValue(base, height, who) {
     }
 }
 
-//  Triangle
-document.getElementById("btn-triangle").addEventListener("click", function () {
-    const areaTriangle = getInputValue("triangle-base", "triangle-height", "triangle")
-    console.log(areaTriangle);
-});
+// add item order list with click button
+function createNewElement(areaTitle, areaValue) {
+    const areaTitleName = document.getElementById(areaTitle).innerText;
+    console.log(areaTitleName);
 
-//  Rectangle
-document.getElementById("btn-rectangle").addEventListener("click", function () {
-    const areaRectangle = getInputValue("rectangle-weight", "rectangle-length", "rectangle")
-    console.log(areaRectangle);
-});
-
-//  Parallelogram
-document.getElementById("btn-parallelogram").addEventListener("click", function () {
-    const areaTriangle = getInputValue("parallelogram-base", "parallelogram-height", "parallelogram")
-    console.log(areaTriangle);
-});
-
-//  Rhombus 
-document.getElementById("btn-rhombus").addEventListener("click", function () {
-    const areaTriangle = getInputValue("rhombus-d1", "rhombus-d2", "rhombus")
-    console.log(areaTriangle);
-});
-
-// Pentagon
-document.getElementById("btn-pentagon").addEventListener("click", function () {
-    const areaTriangle = getInputValue("pentagon-base", "pentagon-p", "pentagon")
-    console.log(areaTriangle);
-});
-
-//  Ellipse 
-document.getElementById("btn-ellipse").addEventListener("click", function () {
-    const areaTriangle = getInputValue("ellipse-a", "ellipse-b", "ellipse")
-    console.log(areaTriangle);
-});
+    const listContainer = document.getElementById("list-container");
+    listContainer.innerHTML = listContainer.innerHTML + `
+    <li>
+        <div class="item">
+            <p>`+ areaTitleName + `</p>
+            <p>`+ areaValue + `cm<sup>2</sup></p>
+            <p><button class="btn btn-primary">Convert to m<sup>2</sup></button></p>
+        </div>
+    </li>
+     `
+}
