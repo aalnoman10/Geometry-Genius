@@ -16,7 +16,7 @@
 <body>
     <div class="container">
         <header>
-            <nav class="navbar bg-body-tertiary">
+            <nav class="navbar bg-body-tertiary rounded">
                 <div class="container-fluid">
                     <div>
                         <h3>Interactive</h3>
@@ -36,18 +36,20 @@
                             <img src="./images/triangle.png" class="card-img-top ggr-img" alt="...">
                             <div class="card-body pt-5">
                                 <h5 class="card-title">Triangle</h5>
-                                <p class="card-text">Area (A) = 0.5 * b * h</p>
+                                <p class="card-text">Area (A) = 0.5 &times; b &times; h</p>
                                 <div class="card-text d-flex">
                                     <label class="d-flex">
-                                        <input class="w-100" type="number" placeholder="b"><span class="px-2">cm</span>
+                                        <input id="triangle-base" class="w-100" type="number" placeholder="h"><span
+                                            class="px-2">cm</span>
                                     </label>
                                     <label class="d-flex">
-                                        <input class="w-100" type="number" placeholder="b"><span class="px-2">cm</span>
+                                        <input id="triangle-height" class="w-100" type="number" placeholder="b"><span
+                                            class="px-2">cm</span>
                                     </label>
                                 </div>
                             </div>
                             <div class="pt-4">
-                                <button class="btn btn-primary w-100">Calculate</button>
+                                <button id="btn-triangle" class="btn btn-primary w-100">Calculate</button>
                             </div>
                         </div>
                     </div>
@@ -57,18 +59,20 @@
                             <img src="./images/rectangle.png" class="card-img-top ggr-height ggr-img" alt="...">
                             <div class="card-body pt-5">
                                 <h5 class="card-title">Rectangle</h5>
-                                <p class="card-text">Area (A) = w * l</p>
+                                <p class="card-text">Area (A) = w &times; l</p>
                                 <div class="card-text d-flex">
                                     <label class="d-flex">
-                                        <input class="w-100" type="number" placeholder="b"><span class="px-2">cm</span>
+                                        <input id="rectangle-weight" class="w-100" type="number" placeholder="w"><span
+                                            class="px-2">cm</span>
                                     </label>
                                     <label class="d-flex">
-                                        <input class="w-100" type="number" placeholder="b"><span class="px-2">cm</span>
+                                        <input id="rectangle-length" class="w-100" type="number" placeholder="l"><span
+                                            class="px-2">cm</span>
                                     </label>
                                 </div>
                             </div>
                             <div class="pt-4">
-                                <button class="btn btn-primary w-100">Calculate</button>
+                                <button id="btn-rectangle" class="btn btn-primary w-100">Calculate</button>
                             </div>
                         </div>
                     </div>
@@ -78,18 +82,20 @@
                             <img src="./images/parallelogram.png" class="card-img-top ggr-height ggr-img" alt="...">
                             <div class="card-body pt-5">
                                 <h5 class="card-title">Parallelogram</h5>
-                                <p class="card-text">Area (A) = b * h</p>
+                                <p class="card-text">Area (A) = b &times; h</p>
                                 <div class="card-text d-flex">
                                     <label class="d-flex">
-                                        <input class="w-100" type="number" placeholder="b"><span class="px-2">cm</span>
+                                        <input id="parallelogram-base" class="w-100" type="number" placeholder="b"><span
+                                            class="px-2">cm</span>
                                     </label>
                                     <label class="d-flex">
-                                        <input class="w-100" type="number" placeholder="b"><span class="px-2">cm</span>
+                                        <input id="parallelogram-height" class="w-100" type="number"
+                                            placeholder="h"><span class="px-2">cm</span>
                                     </label>
                                 </div>
                             </div>
                             <div class="pt-4">
-                                <button class="btn btn-primary w-100">Calculate</button>
+                                <button id="btn-parallelogram" class="btn btn-primary w-100">Calculate</button>
                             </div>
                         </div>
                     </div>
@@ -99,18 +105,20 @@
                             <img src="./images/rhombus.png" class="card-img-top ggr-height ggr-img" alt="...">
                             <div class="card-body pt-5">
                                 <h5 class="card-title">Rhombus</h5>
-                                <p class="card-text">Area (A) = 0.5 * d<sub>1</sub> * d<sub>2</sub></p>
+                                <p class="card-text">Area (A) = 0.5 &times; d<sub>1</sub> &times; d<sub>2</sub></p>
                                 <div class="card-text d-flex">
                                     <label class="d-flex">
-                                        <input class="w-100" type="number" placeholder="b"><span class="px-2">cm</span>
+                                        <input id="rhombus-d1" class="w-100" type="number" placeholder="d1"><span
+                                            class="px-2">cm</span>
                                     </label>
                                     <label class="d-flex">
-                                        <input class="w-100" type="number" placeholder="b"><span class="px-2">cm</span>
+                                        <input id="rhombus-d2" class="w-100" type="number" placeholder="d2"><span
+                                            class="px-2">cm</span>
                                     </label>
                                 </div>
                             </div>
                             <div class="pt-4">
-                                <button class="btn btn-primary w-100">Calculate</button>
+                                <button id="btn-rhombus" class="btn btn-primary w-100">Calculate</button>
                             </div>
                         </div>
                     </div>
@@ -120,18 +128,20 @@
                             <img src="./images/pentagon.png" class="card-img-top ggr-height ggr-img" alt="...">
                             <div class="card-body pt-5">
                                 <h5 class="card-title">Pentagon</h5>
-                                <p class="card-text">Area (A) = 0.5 * p * b</p>
+                                <p class="card-text">Area (A) = 0.5 &times; b &times; p</p>
                                 <div class="card-text d-flex">
                                     <label class="d-flex">
-                                        <input class="w-100" type="number" placeholder="b"><span class="px-2">cm</span>
+                                        <input id="pentagon-base" class="w-100" type="number" placeholder="b"><span
+                                            class="px-2">cm</span>
                                     </label>
                                     <label class="d-flex">
-                                        <input class="w-100" type="number" placeholder="b"><span class="px-2">cm</span>
+                                        <input id="pentagon-p" class="w-100" type="number" placeholder="p"><span
+                                            class="px-2">cm</span>
                                     </label>
                                 </div>
                             </div>
                             <div class="pt-4">
-                                <button class="btn btn-primary w-100">Calculate</button>
+                                <button id="btn-pentagon" class="btn btn-primary w-100">Calculate</button>
                             </div>
                         </div>
                     </div>
@@ -141,18 +151,20 @@
                             <img src="./images/ellipse.png" class="card-img-top ggr-height ggr-img" alt="...">
                             <div class="card-body pt-5">
                                 <h5 class="card-title">Ellipse</h5>
-                                <p class="card-text">Area (A) = &par;ab</p>
+                                <p class="card-text">Area (A) = &pi;ab</p>
                                 <div class="card-text d-flex">
                                     <label class="d-flex">
-                                        <input class="w-100" type="number" placeholder="b"><span class="px-2">cm</span>
+                                        <input id="ellipse-a" class="w-100" type="number" placeholder="a"><span
+                                            class="px-2">cm</span>
                                     </label>
                                     <label class="d-flex">
-                                        <input class="w-100" type="number" placeholder="b"><span class="px-2">cm</span>
+                                        <input id="ellipse-b" class="w-100" type="number" placeholder="b"><span
+                                            class="px-2">cm</span>
                                     </label>
                                 </div>
                             </div>
                             <div class="pt-4">
-                                <button class="btn btn-primary w-100">Calculate</button>
+                                <button id="btn-ellipse" class="btn btn-primary w-100">Calculate</button>
                             </div>
                         </div>
                     </div>
@@ -163,7 +175,11 @@
                     <div class="card h-100 py-5 px-3">
                         <h5 class="card-title text-center text-decoration-underline">Area Calculation</h5>
                         <ol class="pt-3">
-                            <li>a</li>
+                            <li>22</li>
+                            <li>03</li>
+                            <li>7</li>
+                            <li>80</li>
+                            <li>23</li>
                         </ol>
                     </div>
                 </div>
@@ -174,6 +190,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <!-- js -->
+    <script src="script/function.js"></script>
 </body>
 
 </html>
