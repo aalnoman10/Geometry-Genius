@@ -39,5 +39,5 @@ document.getElementById("btn-ellipse").addEventListener("click", function () {
 
 //  new window click button
 document.getElementById("blog-page").addEventListener("click", function () {
-    window.location = "http://127.0.0.1:5500/blog.html"
+    window.location = "https://visionary-axolotl-314c81.netlify.app/"
 })
